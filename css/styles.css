@@ -167,6 +167,7 @@ margin-right: 2rem;
 .icon {
     width: 40px;
     height: 40px;
+    display: inline-block;
 }
 
 .icon--primary {
@@ -247,12 +248,9 @@ background: var(--color-headings);
 color:#fff
 }
 
-.icon {
+.button__icon {
     width: 24px;
     height: 24px;
-}
-
-.icon--white {
     fill: white;
 }
 
@@ -389,4 +387,23 @@ font-size: 6rem;
 
 .plan--popular .card__header {
     position: relative;
+}
+
+/* Cards */
+
+.media {
+    display: flex;
+
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__image {
+    margin-top: 1rem;
 }
