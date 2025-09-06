@@ -190,7 +190,7 @@
     </g>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 2" id="line">
-    <path fill="currentColor" d="M0 0h50v2H0z"></path>
+    <path fill="#2584ff" d="M0 0h50v2H0z"></path>
   </symbol>
   <symbol id="growth" enable-background="new 0 0 512 512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <g>
