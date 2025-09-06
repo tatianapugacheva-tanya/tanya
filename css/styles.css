@@ -221,6 +221,11 @@ width: 100%;
 display: inline-block;
 }
 
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .btn--primary {
     background: var(--color-primary);
     color: #fff;
@@ -497,6 +502,7 @@ font-size: 6rem;
 
 .testimonial {
    padding: 3rem; 
+   overflow: visible;
 }
 
 .testimonial__image > img {
@@ -524,10 +530,66 @@ position: relative;
      .testimonial .quote {
         margin-left: 6rem;
      }
+
+     .testimonial {
+   overflow: hidden;
+}
 }
 
-@media screen and (min-width: 360px) {
-.testimonial {
-    overflow: visible;
+
+
+/* Callout */
+
+.callout {
+    padding: 4rem ;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 16px;
 }
+
+.callout--primary {
+  background: var(--color-primary);
+color: #fff;
+}
+
+.callout__headline {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout__paragraph {
+    font-size: 2rem;
+}
+
+.callout__text-bloc {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+   .callout {
+    margin: 3rem 6rem;
+   }
+   
+    .callout__text-bloc {
+    text-align: left;
+}
+
+.callout .btn {
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.callout .grid--1x2 {
+    gap: 3rem;
+    grid-template-columns:  1fr auto ;
+}
+
 }

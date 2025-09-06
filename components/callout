@@ -1,0 +1,23 @@
+<div class="callout">
+  <div class="callout__text-bloc">
+    <h2 class="callout__headline">Ready To Get started</h2>
+    <p class="callout__paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint
+      soluta doloribus dignissimos labore.
+    </p>
+  </div>
+  <a href="#" class="btn btn--secondary">Get Started</a>
+</div>
+
+<div class="callout callout--primary">
+  <div class="grid grid--1x2">
+    <div class="callout__text-bloc">
+      <h2 class="callout__headline">Ready to get started</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint
+        soluta doloribus dignissimos labore.
+      </p>
+    </div>
+    <a class="btn btn--secondary btn--stretched" href="#">Get started</a>
+  </div>
+</div>
