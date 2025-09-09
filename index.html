@@ -14,23 +14,50 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="collapsible">
-      <header class="collapsible__header" aria-expanded="false">
-        <h2 class="collapsible__headline">Item 1</h2>
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Heading</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nemo
-          dolore cupiditate itaque voluptatibus? Perferendis, beatae? Magni
-          consequuntur dolore, sapiente et placeat blanditiis dignissimos quam
-          praesentium earum voluptas! Sint, mollitia? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          minima id ipsum! Necessitatibus voluptate, at rem, amet repudiandae
+          distinctio ea culpa nobis eligendi ipsam ad molestiae numquam.
+          Voluptatibus, nostrum repellat?
+        </p>
+      </header>
+      <div style="width: 30%; padding: 4rem">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn-block btn--outlined">
+              <p class="search">BUY NOW</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block block--dark block--skewed-right">
+      <div class="container">
+        <h2 class="block__heading">Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          minima id ipsum! Necessitatibus voluptate, at rem, amet repudiandae
+          distinctio ea culpa nobis eligendi ipsam ad molestiae numquam.
+          Voluptatibus, nostrum repellat?
         </p>
       </div>
-    </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
