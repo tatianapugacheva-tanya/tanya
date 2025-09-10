@@ -29,6 +29,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -659,7 +660,7 @@ color: #fff;
      }
 
 .block--skewed-left {
-   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
     }
 
@@ -737,5 +738,31 @@ margin: 0;
     border-bottom: none;
     font-size: 1.6rem;
 }
+}
 
+
+/* Hero */
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.hero__image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+   .hero {
+    padding-top: 0;
+   }
+   
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
 }
