@@ -1,10 +1,6 @@
 // 1️⃣ Import the sprite so Parcel handles it
 import spriteUrl from '../images/sprite.svg';
 
-document.querySelectorAll('.icon use').forEach(use => {
-  use.setAttribute('xlink:href', `${spriteUrl}#menu`);
-});
-
 
 document.addEventListener("DOMContentLoaded", () => {
 
