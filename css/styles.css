@@ -333,7 +333,7 @@ p {
     gap: 0;
   }
 
-  p.search {
+  .input-group .btn__text {
     display: none;
   }
 }
