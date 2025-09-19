@@ -23,6 +23,45 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- Inline SVG sprite -->
+    <svg style="display: none">
+      <!-- Search icon -->
+      <symbol id="search" viewBox="0 0 21.8 23.8">
+        <path
+          d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+          transform="translate(-10.9 -9.3)"
+        ></path>
+      </symbol>
+      <!-- Easy icon -->
+      <symbol id="easy" viewBox="0 0 21.8 23.8">
+        <path
+          d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+          transform="translate(-10.9 -9.3)"
+        ></path>
+      </symbol>
+      <!-- growth icon -->
+      <symbol id="growth" viewBox="0 0 21.8 23.8">
+        <path
+          d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+          transform="translate(-10.9 -9.3)"
+        ></path>
+      </symbol>
+      <!-- wordpress icon -->
+      <symbol id="wordpress" viewBox="0 0 21.8 23.8">
+        <path
+          d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+          transform="translate(-10.9 -9.3)"
+        ></path>
+      </symbol>
+      <!-- quotes icon -->
+      <symbol id="quotes" viewBox="0 0 21.8 23.8">
+        <path
+          d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+          transform="translate(-10.9 -9.3)"
+        ></path>
+      </symbol>
+    </svg>
+
     <header>
       <nav class="nav collapsible">
         <a class="nav__logo" href="/"
@@ -83,7 +122,7 @@
         />
         <button class="btn btn--accent">
           <svg class="button__icon">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use href="#search"></use>
           </svg>
           <span class="btn__text">SEARCH</span>
         </button>
@@ -177,7 +216,7 @@
         <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#easy"></use>
+              <use href="#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy To Use</h3>
@@ -340,7 +379,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary block-showcase__icon2nd">
-                  <use xlink:href="images/sprite.svg#growth"></use>
+                  <use href="#growth"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -358,7 +397,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary block-showcase__icon3rd">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                  <use href="#wordpress"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -392,7 +431,7 @@
             <img src="images/testimonial.jpg" alt="testimonial" />
             <span class="icon-container icon-container--accent">
               <svg class="icon icon--white icon--small">
-                <use xlink:href="images/sprite.svg#quotes"></use>
+                <use href="#quotes"></use>
               </svg>
             </span>
           </div>
