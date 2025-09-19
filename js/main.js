@@ -1,4 +1,20 @@
+// 1️⃣ Import the sprite so Parcel handles it
+import spriteUrl from '../images/sprite.svg';
+
+document.querySelectorAll('.icon use').forEach(use => {
+  use.setAttribute('xlink:href', `${spriteUrl}#menu`);
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
+
+  // 2️⃣ Set the sprite reference for your menu icon
+  const menuIconUse = document.querySelector(".nav__toggler use");
+  if (menuIconUse) {
+    menuIconUse.setAttribute("xlink:href", `${spriteUrl}#menu`);
+  }
+
+  // 3️⃣ Collapsible logic (unchanged)
   const collapsibles = document.querySelectorAll(".collapsible");
 
   collapsibles.forEach((collapsible) => {
@@ -10,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Desktop → expanded
         collapsible.classList.add("collapsible--expanded");
         header.setAttribute("aria-expanded", "true");
-        // Use RAF to wait for layout before setting maxHeight
         requestAnimationFrame(() => {
           content.style.maxHeight = content.scrollHeight + "px";
         });
