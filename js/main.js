@@ -1,5 +1,5 @@
-// 1️⃣ Import the sprite so Parcel handles it
-import spriteUrl from '../images/sprite.svg';
+import sprite from './sprite.svg?raw';
+document.body.insertAdjacentHTML('afterbegin', sprite);
 
 
 document.addEventListener("DOMContentLoaded", () => {
