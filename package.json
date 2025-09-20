@@ -2,10 +2,10 @@
   "name": "moshify",
   "version": "1.0.0",
   "description": "Moshify website",
-  "scripts": {
-    "dev": "parcel serve index.html",
-    "build": "parcel build index.html --dist-dir dist"
-  },
+"scripts": {
+  "dev": "parcel index.html",
+  "build": "parcel build index.html --dist-dir dist"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
