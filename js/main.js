@@ -1,5 +1,4 @@
 
-loadSprite();
 
   // 2️⃣ Collapsible logic (unchanged)
   const collapsibles = document.querySelectorAll(".collapsible");

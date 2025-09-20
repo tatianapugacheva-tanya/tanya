@@ -679,41 +679,24 @@ color: #fff;
 }
 
 
-/* Collapsible */
+/* Collapsible */ 
+.collapsible__header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer; } 
+    
 
-.collapsible__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.collapsible__headline {
-    margin-top: 0;
-    font-size: 3rem;
-}
-
-.collapsible__content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.collapsible--expanded .collapsible__content {
-    max-height: 100vh;
-    opacity: 1;
-}
-
-.collapsible--expanded .collapsible__chevron {
-    transform: rotate(-180deg);
-}
-
-
-.collapsible__chevron {
-    transition: transform 0.3s ;
-   
-}
+    .collapsible__headline { margin-top: 0; font-size: 3rem; } 
+    
+    
+    .collapsible__content { max-height: 0; overflow: hidden; opacity: 0; transition: all 0.3s ease; } 
+    
+    .collapsible--expanded .collapsible__content { max-height: 100vh; opacity: 1; } 
+    
+    .collapsible--expanded .collapsible__chevron { transform: rotate(-180deg); } 
+    
+    .collapsible__chevron { transition: transform 0.3s ; }
 
 /* Blocks */
 
@@ -1018,7 +1001,7 @@ width: 100%;
 }
 
 .footer ul {
-   margin: 0 0 3rem 0;
+   margin: 2 0 3rem 0;
 }
 
 .footer__section {
