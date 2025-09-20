@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- Inline SVG sprite -->
-
     <header>
       <nav class="nav collapsible">
         <a class="nav__logo" href="/"
@@ -32,7 +30,7 @@
         /></a>
         <div class="collapsible__header">
           <svg class="icon icon--white nav__toggler">
-            <use xlink:href="/images/sprite.svg#menu"></use>
+            <use href="./public/sprite.svg#,menu"></use>
           </svg>
         </div>
         <ul class="list nav__list collapsible__content">
@@ -48,7 +46,7 @@
         <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
-            Deploy your website in less than 60 seconds
+            Deploy your website in less than 6 seconds
           </p>
           <a href="" class="btn btn--accent btn--stretched">GET STARTED</a>
         </header>
@@ -85,7 +83,7 @@
         />
         <button class="btn btn--accent">
           <svg class="button__icon">
-            <use xlink:href="/images/sprite.svg#search"></use>
+            <use href="./public/sprite.svg#search"></use>
           </svg>
           <span class="btn__text">SEARCH</span>
         </button>
@@ -179,7 +177,7 @@
         <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="/images/sprite.svg#easy"></use>
+              <use href="./public/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy To Use</h3>
@@ -211,7 +209,7 @@
         <div class="feature__content" data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="/images/sprite.svg#easy"></use>
+              <use href="./public/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy To Use</h3>
@@ -243,7 +241,7 @@
         <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="/images/sprite.svg#easy"></use>
+              <use href="./public/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy To Use</h3>
@@ -275,7 +273,7 @@
         <div class="feature__content" data-aos="fade-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="/images/sprite.svg#easy"></use>
+              <use href="./public/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy To Use</h3>
@@ -324,7 +322,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary block-showcase__icon1st">
-                  <use xlink:href="/images/sprite.svg#snap"></use>
+                  <use href="./public/sprite.svg#easy"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -342,7 +340,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary block-showcase__icon2nd">
-                  <use xlink:href="/images/sprite.svg#growth"></use>
+                  <use href="./public/sprite.svg#easy"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -360,7 +358,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary block-showcase__icon3rd">
-                  <use xlink:href="/images/sprite.svg#wordpress"></use>
+                  <use href="./public/sprite.svg#easy"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -394,7 +392,7 @@
             <img src="images/testimonial.jpg" alt="testimonial" />
             <span class="icon-container icon-container--accent">
               <svg class="icon icon--white icon--small">
-                <use xlink:href="/images/sprite.svg#quotes"></use>
+                <use href="./public/sprite.svg#quotes"></use>
               </svg>
             </span>
           </div>
@@ -410,7 +408,7 @@
                 <div class="media">
                   <div class="media__image quote__line">
                     <svg class="icon icon--primary">
-                      <use xlink:href="/images/sprite.svg#line"></use>
+                      <use href="./public/sprite.svg#line"></use>
                     </svg>
                   </div>
                   <div class="media__body">
@@ -424,15 +422,16 @@
         </div>
       </div>
     </section>
+
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible footer__section">
-          <div class="collapsible__header" aria-expanded="false" role="button">
+          <header class="collapsible__header" aria-expanded="false">
             <h2 class="collapsible__headline footer__headline">PRODUCTS</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="./public/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">WordPress Hosting</a></li>
@@ -444,12 +443,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <div class="collapsible__header" aria-expanded="false" role="button">
+          <header class="collapsible__header" aria-expanded="false">
             <h2 class="collapsible__headline footer__headline">COMPANY</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="/images/sprite.svg#chevron"></use>
+              <use href="./public/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -463,12 +462,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <div class="collapsible__header" aria-expanded="false" role="button">
+          <header class="collapsible__header" aria-expanded="false">
             <h2 class="collapsible__headline footer__headline">SUPPORT</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="/images/sprite.svg#chevron"></use>
+              <use href="./public/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -481,12 +480,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <div class="collapsible__header" aria-expanded="false">
+          <header class="collapsible__header" aria-expanded="false">
             <h2 class="collapsible__headline footer__headline">DOMAINS</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use xlink:href="/images/sprite.svg#chevron"></use>
+              <use href="./public/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
@@ -497,10 +496,10 @@
             </ul>
           </div>
         </section>
-        <div class="footer__brand">
+        <section class="footer__brand">
           <img src="images/logo.svg" alt="Company Logo" />
           <p class="footer__copyright">Copyright 2020 mosh</p>
-        </div>
+        </section>
       </div>
     </footer>
 
